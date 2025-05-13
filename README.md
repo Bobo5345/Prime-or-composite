@@ -39,5 +39,22 @@ It combines simplicity with mathematical logic (√n + 6k ± 1 optimization) to 
 ### ✅ Using Terminal:
 
 ```bash
-g++ -o prime_checker prime_checker.cpp
-./prime_checker
+g++ -o prime_or_composite prime_or_composite.cpp
+./prime_or_composite
+```
+### ⚠️ Warnings & Known Issues
+
+## ⚠️ Warnings & Known Issues
+
+| ⚠️ Issue             | 💬 Description                                                                 |
+|----------------------|---------------------------------------------------------------------------------|
+| `int` Overflow        | The program uses `int`, which supports numbers only up to **2,147,483,647**. Use `long long` for larger inputs. |
+| No input error checks | Entering non-integer or invalid inputs may crash or behave unexpectedly.       |
+| Trial Division Scalability | For very large numbers (100+ digits), trial division becomes too slow. Use probabilistic methods like Miller-Rabin instead. |
+
+### 👨‍💻 Author & Background
+
+This code was developed due to a simple school assignment!
+The implementation succeeded in validating prime numbers up to nearly 1 billion, proving the strength of simple algorithms when properly optimized.
+
+
