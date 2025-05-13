@@ -42,15 +42,15 @@ It combines simplicity with mathematical logic (√n + 6k ± 1 optimization) to 
 g++ -o prime_or_composite prime_or_composite.cpp
 ./prime_or_composite
 ```
-### ⚠️ Warnings & Known Issues
 
-## ⚠️ Warnings & Known Issues
+### ⚠️ Warnings & Known Issues
 
 | ⚠️ Issue             | 💬 Description                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
 | `int` Overflow        | The program uses `int`, which supports numbers only up to **2,147,483,647**. Use `long long` for larger inputs. |
 | No input error checks | Entering non-integer or invalid inputs may crash or behave unexpectedly.       |
 | Trial Division Scalability | For very large numbers (100+ digits), trial division becomes too slow. Use probabilistic methods like Miller-Rabin instead. |
+
 
 ### 👨‍💻 Author & Background
 
